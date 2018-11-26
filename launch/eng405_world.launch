@@ -19,8 +19,8 @@
 	</include>
 
 	<!-- spawn a robot in gazebo-->
-	<!--<node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen" args="-urdf -param robot_description -model eng405_bot"/>-->
+	<node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen" args="-urdf -param robot_description -model eng405_bot"/>
 
 	<!-- launch rviz-->
-	<!--<node name="rviz" pkg="gazebo_ros" type="spawn_model" respawn="false" args="-d /home/shane/Documents/catkin_localisation_ws/src/eng405_bot/launch/amcl.rviz"/>-->
+	<node name="rviz" pkg="gazebo_ros" type="spawn_model" respawn="false" args="-d /home/shane/Documents/catkin_localisation_ws/src/eng405_bot/launch/amcl.rviz"/>
 </launch>
