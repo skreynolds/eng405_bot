@@ -2,6 +2,9 @@
 
 <robot name="eng405_bot" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
+	<!-- Gazebo file used to load the plugins for gazebo for DD, camera, and LRF -->
+	<xacro:include filename="$(find eng405_bot)/urdf/eng405_bot.gazebo"/>
+
 	<!-- Robot footprint -->
 	<link name="robot_footprint"></link>
 
