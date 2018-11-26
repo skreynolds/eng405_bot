@@ -5,6 +5,9 @@
 	<!-- Gazebo file used to load the plugins for gazebo for DD, camera, and LRF -->
 	<xacro:include filename="$(find eng405_bot)/urdf/eng405_bot.gazebo"/>
 
+	<!-- Import the Rviz colors -->
+	<xacro:include filename="$(find eng405_bot)/urdf/materials.xacro"/>
+
 	<!-- Robot footprint -->
 	<link name="robot_footprint"></link>
 
@@ -42,6 +45,7 @@
 			<geometry>
 				<box size="0.17 0.09 0.05"/>
 			</geometry>
+			<material name="blue"/>
 		</visual>
 
 		<!-- Battery brick -->
@@ -57,6 +61,7 @@
 			<geometry>
 				<box size="0.1 0.09 0.07"/>
 			</geometry>
+			<material name="blue"/>
 		</visual>
 
 		<!-- right chassis -->
@@ -72,6 +77,7 @@
 			<geometry>
 				<box size="0.1 0.02 0.035"/>
 			</geometry>
+			<material name="blue"/>
 		</visual>
 
 		<!-- left chassis -->
@@ -87,6 +93,7 @@
 			<geometry>
 				<box size="0.1 0.02 0.035"/>
 			</geometry>
+			<material name="blue"/>
 		</visual>
 
 		<!-- Castor at front of robot -->
